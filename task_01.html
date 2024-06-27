@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-01 :Responsive Landing Page</title>
+    <link rel="stylesheet" href="task_01.css">
+</head>
+
+<body>
+
+    <nav class="Main-navigation">
+        <div class="company">
+            <img src="/assets/comapny logo.png" alt="Company-Logo" class="company-logo" style="margin: 0 2rem;">
+            <p>Shivam Solutions</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#form">Contact us</a></li>
+                <li><a href="#About">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div id="form">
+            <form action="/task_01.html">
+                <h1>Contact Us to Know More</h1>
+                <input type="email" id="email" placeholder="Enter Your Email" required>
+                <br>
+                <button type="submit">Contact Us</button>
+                <br>
+                <br>
+                <br>
+            </form>
+        </div>
+        <div id="services" id="div2" class="target-div">
+            <div>
+                <h2>Web Solution</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsa magni vitae tempora optio
+                    consectetur fugiat tempore cum minima excepturi cumque, nisi ratione omnis beatae aperiam
+                    dignissimos. Architecto, ex quaerat.</p>
+                <h3>At just Rs.9999</h3>
+            </div>
+            <div>
+                <h2>App solution</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus fugiat qui deserunt.</p>
+                <h3>At just Rs.19999</h3>
+            </div>
+            <div>
+                <h2>Database</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam minus et unde fugit numquam
+                    accusantium voluptates consequuntur blanditiis quis, ab illum ratione similique quaerat facere!</p>
+                <h3>chargeable fees are taken</h3>
+            </div>
+        </div>
+        <div id="About" id="div3" class="target-div">
+
+            <h2>Our company</h2>
+            <pre>
+                Shivam Solutions is a dynamic IT solutions company dedicated to providing 
+                innovative and customized technology services to businesses of all sizes.
+                With a mission to empower organizations through advanced technology, Shivam
+                Solutions stands at the forefront of the digital transformation landscape, 
+                offering a comprehensive suite of services designed to enhance operational 
+                efficiency, drive growth, and ensure competitive advantage.
+            </pre>
+            <h2>How it works</h2>
+            <div class="about">
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+            </div>
+        </div>
+        <footer>
+            <div id="footer">
+                    <div class="icon">
+                        <a href="/task_01.html"><img src="/assets/comapny logo.png" alt="Company Logo" style="width: 15rem;"></a>
+                        <h2>Shivam solutions</h2>
+                    </div>
+                    <ul>
+                        <li class="list-item" onclick="form()">Contact us </li>
+                        <li onclick="service()" class="list-item">Services</li>
+                        <li onclick="About()" class="list-item">About </li>
+                    </ul>
+                    <p>We provide you our best services to get 
+                        your desired result . our company' sgoal is to make the customer happy and satisfying
+                    </p>
+            </div>
+        </footer> 
+
+    </div>
+
+    <script src="task_01.js"></script>
+</body>
+
+</html>

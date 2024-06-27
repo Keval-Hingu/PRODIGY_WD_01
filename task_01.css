@@ -1,0 +1,273 @@
+* {
+    --nav-bg-color: rgb(7, 7, 29);
+    --nav-text-color: aliceblue;
+    box-sizing: border-box;
+
+    color: black;
+
+}
+
+
+/* Navigation bar */
+
+.nav {
+    margin-right: 10rem;
+}
+
+.Main-navigation {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+    margin-right: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* company name and logo */
+.company-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.company p {
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: -10rem;
+    margin-left: 35px;
+    color: var(--nav-text-color)
+}
+
+.company-logo {
+    width: 10vw;
+    height: auto;
+}
+
+.nav li {
+    list-style: none;
+    display: inline;
+    margin: 0 2rem;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+}
+
+a:hover {
+    color: aquamarine;
+}
+
+/* separation line */
+
+hr {
+    height: 1rem;
+
+}
+
+
+/* Main content */
+
+
+/* Contact Section */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 15rem;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#form input {
+    width: 20vw;
+    height: 2rem;
+    padding: 0 10px;
+    font-size: larger;
+    background-color: #070735;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+}
+
+button {
+    width: 10vw;
+    height: 2rem;
+    font-size: large;
+    border: 2px solid #01203a;
+    background-color: aliceblue;
+    text-wrap: nowrap;
+}
+
+/* Services section */
+#services {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    position: relative;
+}
+
+#services div {
+    width: 25vw;
+    height: 15rem;
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+    text-align: center;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    text-wrap: wrap;
+}
+
+#services h2,
+h3 {
+    color: whitesmoke;
+}
+
+#services p {
+    color: var(--nav-text-color);
+}
+
+
+/* about company */
+
+#About
+{
+    margin-bottom: 5rem;
+}
+
+
+#About>h2,
+h3 {
+    text-align: center;
+}
+
+#About pre {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+iframe {
+    margin-left: 8rem;
+}
+
+/* Footer */
+
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    height: 15rem;
+    width: 90vw;
+    background-color: #070735;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+
+}
+
+#footer *
+{
+    color: whitesmoke;
+
+}
+
+.icon
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.icon h2
+{
+    padding: 0;
+    margin: 0;
+}
+#footer ul{
+    margin: 4rem 1rem; 
+}
+
+#footer li
+{
+    list-style: none;
+    margin: 1rem 0;
+}
+
+#footer p
+{
+    display: block;
+    text-wrap: wrap;
+    width: 20vw;
+    margin-top:5rem ;
+}
+
+@media screen and (width<950px) {
+    body{
+        width:100vw;
+    }
+
+    .Main-navigation
+    {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    #services
+    {
+        flex-direction: column;
+    }
+    #footer
+    {
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer p{
+
+        margin: 0 0;
+        margin-bottom: 4rem;
+        display: block;
+        width:50%;
+    }
+    #footer ul
+    {
+        margin: 0 auto;
+        
+    }
+    #form button{
+
+        width: fit-content;
+    }
+    #form input{
+
+        width: 80%;
+    }
+  
+}
+
+.list-item
+{
+    cursor: pointer;
+}
